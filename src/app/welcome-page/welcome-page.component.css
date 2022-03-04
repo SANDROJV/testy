@@ -1,0 +1,71 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/media/stars.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: normal;
+}
+
+.rocketman {
+    position: relative;
+    width: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    color: #FE3B1F;
+    font-size: 96px;
+    line-height: 119px;
+    margin-bottom: 10rem;
+    font-family: 'Rowdies';
+    text-align: center;
+}
+
+.button {
+    font-size: 24px;
+    padding: 1.6rem 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #FE3B1F;
+    border-radius: 50px;
+    width: 395px;
+    height: auto;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.8rem 1.8rem 0 black;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#Hbutton {
+    font-size: 24px;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
