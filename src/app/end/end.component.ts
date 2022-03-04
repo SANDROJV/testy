@@ -12,9 +12,6 @@ export class EndComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  submit(){
-/*     document.getElementById("Submit").style.display = 'none';
-    document.getElementById("Thanks").style.display = 'flex';
- */  }
+
 }
 
