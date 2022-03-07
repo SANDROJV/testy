@@ -2,30 +2,31 @@
     <div class="centered">
         <div class="center column ">
             <h1 class="head" style="margin-top: 15%;">Tell us about your skills</h1>
-            <form>
-                <select class="form-select input" aria-label="Default select example">
-                    <option selected>Skills</option>
-                    <option value="1">HTML</option>
-                    <option value="2">CSS</option>
-                    <option value="3">PHP</option>
-                    <option value="4">Laravel</option>
-                    <option value="5">React.JS</option>
-                    <option value="6">Vue.JS</option>
-                    <option value="7">Svelte</option>
-                  </select>
+            <form   form [formGroup]="form">
+                
+                <select formControlName="language" class="form-select input" aria-label="Default select example">
+                    <option  *ngFor="let i of lang" >{{i}}</option>
+                    
+                </select>
                 <br>
-                <input class="skillInput input" type="text" id="year " name="year " placeholder="          Experience Duration in Years">
+                <input class="skillInput input" style="padding: 5%;" formControlName="exp"  type="number" id="year " name="year " placeholder="          Experience Duration in Years">
                 <br>
                 <br>
 
-                <button class="skillButton button" type="submit" style="margin-left: 56%;">Add Programming Language</button>
+                <button class="skillButton button" type="submit" (click)="addSkill()" style="margin-left: 56%;">Add Programming Language</button>
                 <br>
                 <br>
                 <br>
                 <div class="skillCont">
                     <div class="center column ">
                         <div class="toDoListContainer">
-                            <ul class="skillList list-group"></ul>
+
+                            <ul class="skillList list-group">
+                                <li *ngFor="let e of data">
+                                    {{e.language + ", " + e.exp +" years"}}
+                                    <button (click)="remove(e.exp)"> remove </button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
