@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +11,8 @@ import { PersonalComponent } from './personal/personal.component';
 import { SkillsComponent } from './skills/skills.component';
 import { CovidComponent } from './covid/covid.component';
 import { InsightsComponent } from './insights/insights.component';
-
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,12 +21,15 @@ import { InsightsComponent } from './insights/insights.component';
     PersonalComponent,
     SkillsComponent,
     CovidComponent,
-    InsightsComponent
+    InsightsComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
