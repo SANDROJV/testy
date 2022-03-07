@@ -4,9 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.newCont {
     background-image: url(../../assets/media/stars.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,7 +15,6 @@
     width: 550px;
     justify-content: center;
     align-items: center;
-    left: -2.5%;
 }
 
 .welcome {
