@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-var skillInput = document.querySelector(".skillInput");
-var skillList = document.querySelector(".skillList");
+var skillInput:any = document.querySelector(".skillInput");
+var skillList:any = document.querySelector(".skillList");
 
 @Component({
   selector: 'app-skills',
@@ -16,8 +16,8 @@ export class SkillsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-   addSkill(){
-    var newSkill = document.createElement("li");
+   addSkill():any{
+    var newSkill:any = document.createElement("li");
     newSkill.classList.add("input");
     newSkill.innerText = skillInput.nodeValue;
     skillList.appendChild(newSkill);
@@ -28,7 +28,7 @@ export class SkillsComponent implements OnInit {
     var cancelButton = document.createElement("button");
     cancelButton.classList.add("button");
     skillList.appendChild(cancelButton)
-    var e;
+    var e:any;
     var it = e.target;
     if (it.classList[0] === "cancelButton"){
       let skillItself = it.parentElement;
