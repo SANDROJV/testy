@@ -15,10 +15,10 @@
 
 .rocketman {
     position: relative;
-    width: 550px;
+    width: 240px;
     justify-content: center;
     align-items: center;
-    left: -2.5%;
+    margin-top: 5%;
 }
 
 .welcome {

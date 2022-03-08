@@ -1,0 +1,67 @@
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    color: white;
+    font-family: 'Rowdies';
+    text-align: center;
+    align-items: center;
+    font-weight: normal;
+    display: flex;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 70px;
+    display: flex;
+    letter-spacing: 0.11em;
+}
+
+.listCont {
+    width: 1150px;
+    height: auto;
+}
+
+.text {
+    width: 705px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.button {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-decoration: none;
+    color: white;
+    background-color: #FE3B1F;
+    width: 201px;
+    height: 32px;
+    border: none;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.3rem 1.3rem 0 black;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}

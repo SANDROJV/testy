@@ -30,8 +30,7 @@ export class CovidComponent implements OnInit {
 
   saveInfo():any{
     if(this.form.valid){
-      this.data3.push(this.form.value)
-      this.data = this.data3
+
      }
   }
   

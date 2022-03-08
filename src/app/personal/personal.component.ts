@@ -28,8 +28,7 @@ export class PersonalComponent implements OnInit {
   saveInfo():any{
     if(this.form.valid){
       this.data1.push(this.form.value)
-      this.data = this.data1
-     }
+    }
   }
   
 }

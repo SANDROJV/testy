@@ -25,7 +25,6 @@ export class SkillsComponent implements OnInit {
    addSkill():any{
      if(this.form.valid){
       this.data2.push(this.form.value)
-      this.data = this.data2
 
      }
     

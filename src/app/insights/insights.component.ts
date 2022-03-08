@@ -27,7 +27,7 @@ export class InsightsComponent implements OnInit {
   saveInfo():any{
     if(this.form.valid){
       this.data4.push(this.form.value)
-      this.data = this.data4
+
      }
   }
 }

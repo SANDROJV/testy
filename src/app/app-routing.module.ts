@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { EndComponent } from './end/end.component';
 import { InsightsComponent } from './insights/insights.component';
@@ -52,4 +51,7 @@ const routes: Routes = [
   exports: [RouterModule],
   
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+
+}
+

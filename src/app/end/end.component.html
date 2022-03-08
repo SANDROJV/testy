@@ -1,8 +1,11 @@
 <div class="container ">
-    <div class="center column ">
-        <a routerLink="/welcome" class="button">Submit</a>
-        <a routerLink="/insights" class="Hbutton ">go back</a>
+    <div class="center column" id="changeCont">
+        <div id="toHide"> >
+            <a (click)="submit()" class="button ">Submit</a>
+            <a routerLink="/insights " class="Hbutton ">go back</a>
+        </div>
 
-        <p class="welcome hidden" id="Thanks ">Thanks for Joining 😊</p>
+        <div id="toShow" style="color: #FE3B1F; font-size: 96px; line-height: 119px;">
+        </div>
     </div>
 </div>

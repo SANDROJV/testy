@@ -9,15 +9,6 @@
     background-blend-mode: normal;
 }
 
-.welcome {
-    color: #FE3B1F;
-    font-size: 96px;
-    line-height: 119px;
-    margin-bottom: 10rem;
-    font-family: 'Rowdies';
-    text-align: center;
-}
-
 .button {
     font-size: 36px;
     padding: 1rem 0;
@@ -65,10 +56,6 @@
 .center {
     justify-content: center;
     align-items: center;
-}
-
-.shown {
-    display: flex;
 }
 
 .hidden {
