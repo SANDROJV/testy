@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
 
 
 @Component({
@@ -27,11 +29,14 @@ export class EndComponent implements OnInit {
     await delay(200)
     this.createWelcome()
 
-    await delay(1000);
+    await delay(3000);
     this.router.navigate(['welcome']);
 
   }
 
+  goBack(){
+    this.router.navigate(['insights'])
+  }
   
 
   createWelcome(){

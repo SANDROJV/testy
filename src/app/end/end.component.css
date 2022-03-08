@@ -31,6 +31,12 @@
     transform: scale(1.03);
 }
 
+.Hbutton:hover {
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
 .Hbutton {
     font-size: 28px;
     padding: 0.6rem 0;
