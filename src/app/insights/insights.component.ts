@@ -13,8 +13,8 @@ export class InsightsComponent implements OnInit {
     {  
       devYes: new FormControl('' ),
       devNo: new FormControl(''),
-      devYou: new FormControl('',Validators.required),
-      tellMe: new FormControl('',Validators.required),
+      devYou: new FormControl(''),
+      tellMe: new FormControl(''),
 
     }
   )
