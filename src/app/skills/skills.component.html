@@ -2,14 +2,14 @@
     <div class="centered">
         <div class="center column ">
             <h1 class="head" style="margin-top: 15%;">Tell us about your skills</h1>
-            <form   form [formGroup]="form">
-                
+            <form form [formGroup]="form">
+
                 <select formControlName="language" class="form-select input" aria-label="Default select example">
                     <option  *ngFor="let i of lang" >{{i}}</option>
                     
                 </select>
                 <br>
-                <input class="skillInput input" style="padding: 5%;" formControlName="exp"  type="number" id="year " name="year " placeholder="          Experience Duration in Years">
+                <input class="skillInput input" style="padding: 5%;" formControlName="exp" type="number" id="year " name="year " placeholder="Experience Duration in Years">
                 <br>
                 <br>
 
@@ -20,11 +20,10 @@
                 <div class="skillCont">
                     <div class="center column ">
                         <div class="toDoListContainer">
-
-                            <ul class="skillList list-group">
-                                <li *ngFor="let e of data">
-                                    {{e.language + ", " + e.exp +" years"}}
-                                    <button (click)="remove(e.exp)"> remove </button>
+                            <ul class="skillList list-group ">
+                                <li *ngFor="let e of data2" class="input">
+                                    {{e.language + " " + " Years of experience: " + e.exp}}
+                                    <a (click)="remove(e.exp)"><img src="../../assets/media/Remove.png" alt="remove" class="radio"></a>
                                 </li>
                             </ul>
                         </div>

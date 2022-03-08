@@ -10,29 +10,28 @@ import { DataService } from '../data.service';
 
 export class SkillsComponent implements OnInit {
   lang: any = ['Choose','HTML', 'CSS', 'PHP', 'Laravel' ,'React.JS' ,'Vue.JS' ,'Svlete']
-  data:any = []
+  data2:any = []
   form = new FormGroup(
     {  
       language: new FormControl('',Validators.required ),
       exp: new FormControl('',Validators.required),
     }
   ) 
-  constructor(private data1:DataService) { }
+  constructor(private data:DataService) { }
 
   ngOnInit(): void {
   }
 
    addSkill():any{
      if(this.form.valid){
-      this.data.push(this.form.value)
-      this.data1 = this.data
-      //console.log(this.data1);
-      //console.log(this.form.value);
+      this.data2.push(this.form.value)
+      this.data = this.data2
+
      }
     
   }
   remove(exp:any){
-    this.data = this.data.filter((d: { exp: number; })=>d.exp!=exp);
+    this.data2 = this.data2.filter((d: { exp: number; })=>d.exp!=exp);
   }
 
 }

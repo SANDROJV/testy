@@ -2,35 +2,35 @@
     <div class="centered">
         <div class="center column ">
             <h1 class="head" style="margin-top: 15%;">Hey, Rocketeer, what are your coordinates?</h1>
-            <form>
-                <input type="text " id="fname " name="fname " placeholder="          First Name ">
+            <form form [formGroup]="form">
+                <input formControlName="fname" type="text " id="fname " name="fname " style="padding: 5%;" placeholder="First Name ">
                 <br>
                 <br>
                 <br>
-                <input type="text " id="lname " name="lname " placeholder="          Last Name ">
+                <input formControlName="lname" type="text " id="lname " name="lname " style="padding: 5%;" placeholder="Last Name ">
                 <br>
                 <br>
                 <br>
-                <input type="text " id="email " name="email " placeholder="          E Mail ">
+                <input formControlName="email" type="text " id="email " name="email " style="padding: 5%;" placeholder="E Mail ">
                 <br>
                 <br>
                 <br>
-                <input type="text " id="number " name="number " placeholder="          +995 5_ _ _ _ ">
+                <input formControlName="phone" type="text " id="number " name="number " style="padding: 5%;" placeholder="+995 5_ _ _ _ ">
                 <br>
                 <br>
                 <br>
             </form>
 
             <div class="navCont center">
-                <a routerLink="/welcome" style="margin: 5%;"><img src="../../assets/media/Previous.png" class="radio"></a>
+                <a routerLink="/welcome" style="margin: 5%;"><img src="../../assets/media/Previous.png" class="radio" (click)="saveInfo()"></a>
 
-                <a routerLink="/personal" style="margin: 5%;"><img src="../../assets/media/Ellipse 1.png" class="radio"></a>
-                <a routerLink="/skills" style="margin: 5%;"><img src="../../assets/media/Ellipse 2.png" class="radio"></a>
-                <a routerLink="/covid" style="margin: 5%;"><img src="../../assets/media/Ellipse 2.png" class="radio"></a>
-                <a routerLink="/insights" style="margin: 5%;"><img src="../../assets/media/Ellipse 2.png" class="radio"></a>
-                <a routerLink="/end" style="margin: 5%;"><img src="../../assets/media/Ellipse 2.png" class="radio"></a>
+                <a routerLink="/personal" style="margin: 5%;"><img src="../../assets/media/Ellipse 1.png" class="radio" (click)="saveInfo()"></a>
+                <a routerLink="/skills" style="margin: 5%;"><img src="../../assets/media/Ellipse 2.png" class="radio" (click)="saveInfo()"></a>
+                <a routerLink="/covid" style="margin: 5%;"><img src="../../assets/media/Ellipse 2.png" class="radio" (click)="saveInfo()"></a>
+                <a routerLink="/insights" style="margin: 5%;"><img src="../../assets/media/Ellipse 2.png" class="radio" (click)="saveInfo()"></a>
+                <a routerLink="/end" style="margin: 5%;"><img src="../../assets/media/Ellipse 2.png" class="radio" (click)="saveInfo()"></a>
 
-                <a routerLink="/skills" style="margin: 5%;"><img src="../../assets/media/Next.png" class="radio"></a>
+                <a routerLink="/skills" style="margin: 5%;"><img src="../../assets/media/Next.png" class="radio" (click)="saveInfo()"></a>
             </div>
         </div>
     </div>

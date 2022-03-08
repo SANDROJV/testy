@@ -13,6 +13,7 @@ import { CovidComponent } from './covid/covid.component';
 import { InsightsComponent } from './insights/insights.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ApplicationsComponent } from './applications/applications.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SkillsComponent,
     CovidComponent,
     InsightsComponent,
+    ApplicationsComponent,
 
 
   ],

@@ -2,16 +2,16 @@
     <div class="centered">
         <div class="center column ">
             <h1 class="head center" style="margin-top: 15%;">What about you?</h1>
-            <form>
+            <form form [formGroup]="form">
                 <p>Would you attend Devtalks and maybe also organize your own?</p>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input formControlName="devYes" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
                         Yes
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <input formControlName="devNo" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                     <label class="form-check-label" for="flexRadioDefault2">
                         No
                     </label>
@@ -20,28 +20,29 @@
                 <br>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">What would you speak about at Devtalk?</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder=" 
+                    <textarea formControlName="devYou" class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder=" 
     I would..."></textarea>
                 </div>
                 <br>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Tell us something special</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder=""></textarea>
+                    <textarea formControlName="tellMe" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="
+    I..."></textarea>
                 </div>
                 <br>
 
 
             </form>
             <div class="navCont center">
-                <a routerLink="/covid" style="margin: 5%;"><img src="../../assets/media/Previous.png" class="radio"></a>
+                <a routerLink="/covid" style="margin: 5%;"><img src="../../assets/media/Previous.png" class="radio" (click)="saveInfo()"></a>
 
-                <a routerLink="/personal" style="margin: 5%;"><img src="../../assets/media/Ellipse 1.png" class="radio"></a>
-                <a routerLink="/skills" style="margin: 5%;"><img src="../../assets/media/Ellipse 1.png" class="radio"></a>
-                <a routerLink="/covid" style="margin: 5%;"><img src="../../assets/media/Ellipse 1.png" class="radio"></a>
-                <a routerLink="/insights" style="margin: 5%;"><img src="../../assets/media/Ellipse 1.png" class="radio"></a>
-                <a routerLink="/end" style="margin: 5%;"><img src="../../assets/media/Ellipse 2.png" class="radio"></a>
+                <a routerLink="/personal" style="margin: 5%;"><img src="../../assets/media/Ellipse 1.png" class="radio" (click)="saveInfo()"></a>
+                <a routerLink="/skills" style="margin: 5%;"><img src="../../assets/media/Ellipse 1.png" class="radio" (click)="saveInfo()"></a>
+                <a routerLink="/covid" style="margin: 5%;"><img src="../../assets/media/Ellipse 1.png" class="radio" (click)="saveInfo()"></a>
+                <a routerLink="/insights" style="margin: 5%;"><img src="../../assets/media/Ellipse 1.png" class="radio" (click)="saveInfo()"></a>
+                <a routerLink="/end" style="margin: 5%;"><img src="../../assets/media/Ellipse 2.png" class="radio" (click)="saveInfo()"></a>
 
-                <a routerLink="/end" style="margin: 5%;"><img src="../../assets/media/Next.png" class="radio"></a>
+                <a routerLink="/end" style="margin: 5%;"><img src="../../assets/media/Next.png" class="radio" (click)="saveInfo()"></a>
             </div>
         </div>
     </div>

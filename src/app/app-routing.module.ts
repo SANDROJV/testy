@@ -8,6 +8,7 @@ import { InsightsComponent } from './insights/insights.component';
 import { PersonalComponent } from './personal/personal.component';
 import { SkillsComponent } from './skills/skills.component';
 import { CovidComponent } from './covid/covid.component';
+import { ApplicationsComponent } from './applications/applications.component';
 
 
 const routes: Routes = [
@@ -39,8 +40,11 @@ const routes: Routes = [
   {
     path: 'covid',
     component: CovidComponent
+  },
+  {
+    path: 'applications',
+    component: ApplicationsComponent
   }
-
 ];
 
 @NgModule({
